@@ -16,9 +16,11 @@ export default function CardMiniGame({ title, description, link }: Props) {
 
 	const copy = (link: string) => {
 		if (isCopy) return;
-
 		navigator.clipboard.writeText(
-			`${process.env.NEXT_PUBLIC_URL_BASE}/${link}`
+			`${window.location.href.substring(
+				0,
+				window.location.href.length - 1
+			)}${link}`
 		);
 		setIsCopy(true);
 	};
