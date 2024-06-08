@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<section className="flex py-10 md:min-h-screen justify-center items-center">
+		<section className="flex py-10 lg:py-0 lg:h-[100dvh] justify-center items-center">
 			<aside className="w-10/12 grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-screen-xl mx-auto items-center justify-center">
 				<div className="flex flex-col gap-y-3 w-full">
 					<h1 className="text-3xl md:text-5xl text-white font-bold">
@@ -16,12 +16,18 @@ export default function Hero() {
 						memorable.
 					</p>
 					<aside className="flex items-center sm:flex-row flex-col gap-3">
-						<Link href="#games" className="!w-full sm:!w-fit button-primary">
+						<Link
+							href="#minijuegos"
+							className="!w-full sm:!w-fit button-primary"
+						>
 							Jugar ahora
 						</Link>
-						<button className="!w-full sm:!w-fit button-secondary">
+						<Link
+							href="#como-funciona"
+							className="!w-full sm:!w-fit button-secondary"
+						>
 							¿Como funciona?
-						</button>
+						</Link>
 					</aside>
 				</div>
 				<Image
