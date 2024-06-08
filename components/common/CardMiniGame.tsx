@@ -35,11 +35,16 @@ export default function CardMiniGame({ title, description, link }: Props) {
 						className="button-secondary mt-3 text-sm flex items-center justify-center gap-x-2"
 					>
 						{!isCopy ? (
-							<IconCopy className="size-4" />
+							<>
+								<IconCopy className="size-4" />
+								Copiar link
+							</>
 						) : (
-							<IconCheck className="size-4 text-green-500" />
+							<>
+								<IconCheck className="size-4 text-green-500" />
+								Link copiado 🎉
+							</>
 						)}
-						Copiar link
 					</button>
 				</footer>
 			</div>

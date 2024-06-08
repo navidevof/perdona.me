@@ -16,10 +16,10 @@ export default function SectionMiniGames() {
 			link: "/minijuegos-2",
 		},
 		{
-			title: "¡El Juego del Perdón!",
+			title: "¡Bonk del Desestres!",
 			description:
-				'Este mini juego romántico y divertido te invita a ganar el perdón de tu pareja de una manera muy especial. Cada vez que intentas presionar el botón "NO", este se hace más pequeño, mientras que el botón "Sí" se hace más grande. ¡Cuánto más intentas decir "NO", más evidente se vuelve que la respuesta correcta es "Sí"!',
-			link: "/minijuegos-2",
+				'En este divertido juego, cada vez que presionas el botón "Pegar", aparece el icónico meme de DogBonk. ¡Una manera hilarante de aliviar tensiones y añadir risas a tu relación!',
+			link: "/minijuegos-3",
 		},
 	];
 

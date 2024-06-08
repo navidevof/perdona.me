@@ -38,7 +38,7 @@ export default function Page() {
 	};
 
 	return (
-		<main className="min-h-screen flex justify-center items-center">
+		<main className="h-[100dvh] flex justify-center items-center">
 			<section
 				ref={$container}
 				className="flex flex-col gap-y-6 max-w-screen-lg w-10/12 text-center py-10 border z-0 border-black relative"
