@@ -1,28 +1,9 @@
 import React from "react";
 import CardMiniGame from "@/components/common/CardMiniGame";
+import MINI_GAMES from "@/data/mini-games";
+import Link from "next/link";
 
 export default function SectionMiniGames() {
-	const GAMES = [
-		{
-			title: "¡Por Favor, Perdóname!",
-			description:
-				'Este divertido y tierno mini juego está diseñado para derretir corazones. Tu misión es conseguir el perdón de tu pareja al presionar el botón "Sí". Pero cuidado, el botón "NO" no se dejará presionar fácilmente y escapará cada vez que intentes alcanzarlo.',
-			link: "/minijuegos-1",
-		},
-		{
-			title: "¡El Juego del Perdón!",
-			description:
-				'Este mini juego romántico y divertido te invita a ganar el perdón de tu pareja de una manera muy especial. Cada vez que intentas presionar el botón "NO", este se hace más pequeño, mientras que el botón "Sí" se hace más grande. ¡Cuánto más intentas decir "NO", más evidente se vuelve que la respuesta correcta es "Sí"!',
-			link: "/minijuegos-2",
-		},
-		{
-			title: "¡Bonk del Desestres!",
-			description:
-				'En este divertido juego, cada vez que presionas el botón "Pegar", aparece el icónico meme de DogBonk. ¡Una manera hilarante de aliviar tensiones y añadir risas a tu relación!',
-			link: "/minijuegos-3",
-		},
-	];
-
 	return (
 		<section id="minijuegos" className="flex flex-col gap-y-8">
 			<header className="w-10/12 mx-auto flex flex-col gap-y-2">
@@ -35,10 +16,13 @@ export default function SectionMiniGames() {
 				</p>
 			</header>
 			<aside className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-lg gap-8 mx-auto w-10/12">
-				{GAMES.map((game, idx) => (
+				{MINI_GAMES.slice(0, 3).map((game, idx) => (
 					<CardMiniGame key={idx} {...game} />
 				))}
 			</aside>
+			<Link href="/minijuegos" className="button-secondary mx-auto">
+				Ver más
+			</Link>
 		</section>
 	);
 }
